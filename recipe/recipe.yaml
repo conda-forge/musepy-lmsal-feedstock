@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.2"
+  version: "0.2.4"
   python_min: "3.12"
 
 package:
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/muse/muse-${{ version }}.tar.gz
-  sha256: 39744c9224e17aca535f03a626bf9e35832cc17b5db355ef07058427667f3721
+  sha256: ad8326e95edb42642c2b032f6ee7ff7607d183f97ebe2e3d36e5568edd344f5d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
